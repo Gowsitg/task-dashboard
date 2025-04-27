@@ -34,7 +34,7 @@ The drag-and-drop library worked well, but it took some effort to ensure the UI 
 I used JSON Server as a mock backend, which was helpful for testing, but integrating real API services and handling more complex state changes could be improved.
 
 # Instructions to Run the Project Locally
-# Clone the repository: git clone 
+# Clone the repository: git clone https://github.com/Gowsitg/task-dashboard.git
 # Navigate to the project directory: cd task-management-dashboard
 # Install dependencies: npm install
 # Run the project: ng serve
