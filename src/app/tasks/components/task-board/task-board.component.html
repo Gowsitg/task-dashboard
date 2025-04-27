@@ -1,0 +1,52 @@
+<div cdkDropListGroup>
+    <!-- -->
+    <div class="header">
+        <h2>Task Dashboard</h2>
+        <button mat-raised-button class="add-button" (click)="openAddTaskDialog()">Add New Task</button>
+
+    </div>
+    <div class="board">
+        <div class="column" cdkDropList [cdkDropListData]="todo" (cdkDropListDropped)="drop($event)">
+            <h2>To Do</h2>
+            <div *ngFor="let task of todo" class="task" cdkDrag matTooltip="Click and drag to move task">
+                <div class="task-header">
+                    <h3>{{ task.title }}</h3>
+                    <button mat-icon-button matTooltip="Delete Task" class="delete-button" (click)="delete(task.id)">
+                        <mat-icon>delete</mat-icon> </button>
+                </div>
+
+                <p>{{ task.description }}</p>
+
+            </div>
+        </div>
+
+        <div class="column" cdkDropList [cdkDropListData]="inProgress" (cdkDropListDropped)="drop($event)">
+            <h2>In Progress</h2>
+            <div *ngFor="let task of inProgress" class="task" cdkDrag matTooltip="Click and drag to move task">
+                <div class="task-header">
+                    <h3>{{ task.title }}</h3>
+                    <button mat-icon-button matTooltip="Delete Task" class="delete-button" (click)="delete(task.id)">
+                        <mat-icon>delete</mat-icon> </button>
+                </div>
+
+                <p>{{ task.description }}</p>
+
+            </div>
+
+        </div>
+
+        <div class="column" cdkDropList [cdkDropListData]="done" (cdkDropListDropped)="drop($event)">
+            <h2>Done</h2>
+            <div *ngFor="let task of done" class="task" cdkDrag matTooltip="Click and drag to move task">
+                <div class="task-header">
+                    <h3>{{ task.title }}</h3>
+                    <button mat-icon-button matTooltip="Delete Task" class="delete-button" (click)="delete(task.id)">
+                        <mat-icon>delete</mat-icon> </button>
+                </div>
+
+                <p>{{ task.description }}</p>
+
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+{
+  "tasks": [
+    {
+      "id": "a4a2",
+      "title": "Introduction to Angular concepts",
+      "description": "Angular is a platform and framework for building single-page client applications using HTML and TypeScript. Angular is written in TypeScript.",
+      "status": "In Progress"
+    },
+    {
+      "id": "0c49",
+      "title": "Introduction to React",
+      "description": "React is a front-end JavaScript library. React was developed by the Facebook Software Engineer Jordan Walke. React is also known as React.js or ReactJS ...",
+      "status": "To Do"
+    }
+  ]
+}

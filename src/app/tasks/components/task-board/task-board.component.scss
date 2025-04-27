@@ -1,0 +1,15 @@
+.task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    button {
+        background-color: #fff;
+        color: red;
+        display: none;
+
+        @media (max-width: 768px) {
+            display: block !important;
+        }
+    }
+}
