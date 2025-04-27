@@ -6,7 +6,7 @@
 
     </div>
     <div class="board">
-        <div class="column" cdkDropList [cdkDropListData]="todo" (cdkDropListDropped)="drop($event)">
+        <div class="column" cdkDropList [cdkDropListData]="todo" (cdkDropListDropped)="drop($event)" id="cdk-drop-list-3">
             <h2>To Do</h2>
             <div *ngFor="let task of todo" class="task" cdkDrag matTooltip="Click and drag to move task">
                 <div class="task-header">
@@ -20,7 +20,7 @@
             </div>
         </div>
 
-        <div class="column" cdkDropList [cdkDropListData]="inProgress" (cdkDropListDropped)="drop($event)">
+        <div class="column" cdkDropList [cdkDropListData]="inProgress" (cdkDropListDropped)="drop($event)" id="cdk-drop-list-4">
             <h2>In Progress</h2>
             <div *ngFor="let task of inProgress" class="task" cdkDrag matTooltip="Click and drag to move task">
                 <div class="task-header">
@@ -35,7 +35,7 @@
 
         </div>
 
-        <div class="column" cdkDropList [cdkDropListData]="done" (cdkDropListDropped)="drop($event)">
+        <div class="column" cdkDropList [cdkDropListData]="done" (cdkDropListDropped)="drop($event)" id="cdk-drop-list-5">
             <h2>Done</h2>
             <div *ngFor="let task of done" class="task" cdkDrag matTooltip="Click and drag to move task">
                 <div class="task-header">
